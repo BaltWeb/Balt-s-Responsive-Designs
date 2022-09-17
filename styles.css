@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+/*THIS html code is required to ensure the same display of the page across all browsers.*/
+html, html * {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/*Above IMPORTANT !*/
+/*Global header setting here:*/
+header {
+  padding: 32px
+}
+/*to here.*/
+/*Global imgs styling*/
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+footer {
+	padding: 20px 30px;
+	background-color: #9EA8E7
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+}
+.style-logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 192px;/*Logo img must be given an Absolute size in order to differanciate it from the other imgs*/
+}
+.style-nav ul {
+  list-style-type: none;
+}
+.style-nav ul li a {
+  text-decoration: none;
+  color: #3005E1;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  padding: 8px;
+}
+/*IMPORTANT ! kmown as "zeroing the rows" !!! required to ensure rows work properly. */
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+/* THIS PART ABOVE IS INCLUDED IN THE ZEROING!*/
+.hero {
+  background-image: url("Images/hero.jpg");
+  background-size: cover;
+  padding: 20px 20px 50px 20px;
+  color: aquamarine;
+  text-align: center;
+}
+h1 {
+  font-size: 57px;
+  text-transform: uppercase;
+  font-weight: 200;
+  margin-bottom: 60px;
+}
+h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 200;
+  margin-bottom: 23px;
+}
+h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 200;
+  margin-bottom: 120px;
+}
+h4 {
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 35px;
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+.button {
+  border: 2px #3919DB solid;
+  padding: 8px 30px;
+  border-radius: 30px;
+  color: aquamarine;
+  text-decoration: none;
+}
+.info-box-tan {
+  background-color: #b9a88e;
+  color: aquamarine;
+  padding: 30px 20px 60px;
+  text-align: center;
+}
+.info-box-dark {
+  background-color: #2d2d35;
+  color: aquamarine;
+  padding: 30px 20px 60px;
+  text-align: center;
+}
+
+.footer-text {
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+
+.col {width: 100%;}
+ 
+/*Tablet View*/
+@media (min-width:768px) {
+  
+	body {
+		max-width: 778px;
+	}
+	
+	.style-nav ul li {
+    display: inline-block;
+  }
+  .style-nav ul {
+    text-align: center;
+  }
+	
+h1{
+	font-size: 40px;
+	margin-bottom: 90px;
+	}
+	
+.col-md-one-half {
+    width: 50%;
+}
+
+.col {
+	float: left;
+	padding: 0px 7px 14px;
+   }
+}
+
+/*Deektop View*/
+@media (min-width:1024px) {
+  
+	body {
+		max-width: 1200px;
+	}
+	
+	.style-logo {
+    float: left;
+  }
+  .style-nav {
+    float: right;
+  }
+	.col-lg-one-fourth {
+		width: 25%;
+	}
+}
